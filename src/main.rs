@@ -1,19 +1,12 @@
-use anchor_container::{AnchorContainer, AnchorContainerProps, AnchorEntry};
-use button::{Button, ButtonMessage, ButtonProps};
-use expandable_button::{ExpandableButton, ExpandableButtonProps};
 use macroquad::prelude::*;
-use types::{
+use nui::anchor_container::{AnchorContainer, AnchorContainerProps, AnchorEntry};
+use nui::button::{Button, ButtonMessage, ButtonProps};
+use nui::expandable_button::{ExpandableButton, ExpandableButtonProps};
+use nui::types::{
     next_id, Anchor, AnchorX, AnchorY, AppState, Bounds, Element, EventObserver, KeyState,
     MacroquadRenderer, MessageData, Position, PreserveRatio, Scale, Size, Space, UIContext,
 };
-use vlist_container::{VListContainer, VListContainerProps};
-
-pub mod anchor_container;
-pub mod button;
-pub mod container;
-pub mod expandable_button;
-pub mod types;
-pub mod vlist_container;
+use nui::vlist_container::{VListContainer, VListContainerProps};
 
 #[macroquad::main("nui")]
 async fn main() {
